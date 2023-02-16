@@ -20,9 +20,24 @@
             the_custom_logo();
             } ?>
         </div>
+        <div class="nav-list">
         <?php wp_nav_menu( array( 
             'theme_location' => 'top-menu', 
             "menu_class" => "top-bar"
             ) ); ?>
+        <?php if(is_user_logged_in()){
+            ?>
+            <div class="center-login-logout">
+            <a href="http://afstudeer-project-urbanleuven.be/wp-login.php?action=logout">Logout</a>    
+        </div>
+            <?php
+            
+        }
+        else{ ?>
+        <div class="center-login-logout">
+        <a href="https://afstudeer-project-urbanleuven.be/wp-login.php">Login</a>
+        </div>
+        <?php }?>
+        </div>
     </div>
 </header>

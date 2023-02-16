@@ -1,0 +1,33 @@
+
+.footer{
+    background-color: #0000;
+}
+body{
+    background-color: #0000;
+}
+h1{
+    text-align: center;
+    text-size-adjust: 32px;
+}
+.menu-item-has-children{
+    position: relative;
+    display: inline-block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 2;
+    background-color: var(--own-color);
+    list-style: none;
+  }
+  .menu-item-has-children:hover .sub-menu {
+    display: block;
+  }
+
+.subthema{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
