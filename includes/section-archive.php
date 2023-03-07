@@ -15,7 +15,7 @@
 
 
         <div class="is-vertical is-nowrap is-layout-flex wp-container-2 wp-block-group post-card-body">
-            <h2 style="text-transform:capitalize;" class="wp-block-post-title has-large-font-size"><?php the_title() ?></h2>
+            <a href="<?php get_permalink() ?>" ><<h2 style="text-transform:capitalize;" class="wp-block-post-title has-large-font-size"><?php the_title() ?></h2></a>
 
             <div class="wp-block-post-date has-small-font-size">
                 <time>

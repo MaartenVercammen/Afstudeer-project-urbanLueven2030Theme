@@ -1,33 +1,277 @@
+body {
+  background-color: #0000;
+}
+h1 {
+  text-align: center;
+  text-size-adjust: 32px;
+}
 
-.footer{
-    background-color: #0000;
+.subthema {
+  margin-left: 15%;
+  margin-right: 15%;
 }
-body{
-    background-color: #0000;
+
+.contact_title {
+  text-align: center;
+  text-size-adjust: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-h1{
-    text-align: center;
-    text-size-adjust: 32px;
+.frontBlock1 {
+  margin-bottom: 5rem;
 }
-.menu-item-has-children{
-    position: relative;
-    display: inline-block;
+.cardje {
+  display: flex;
+  position: relative;
 }
-.sub-menu {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 2;
-    background-color: var(--own-color);
-    list-style: none;
+.cardje * {
+  transition: 0.3s ease all;
+}
+.focus-content {
+  position: absolute;
+  display: flex;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--main-2-color);
+}
+.cardje img {
+  width: 100%;
+  height: 100%;
+  object-fit: content;
+  object-position: center;
+  z-index: 1;
+  border-radius: 5px;
+}
+.cardje:hover .focus-content {
+  z-index: 2;
+  background-color: #f7f7f7;
+}
+.thematextHome {
+  max-width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+.themasTitleHome {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.watWeDoenTitle {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.meedoenColumn {
+  max-width: 50%;
+  margin-left: 25%;
+}
+.climateNeutral {
+  max-width: 70%;
+  margin-left: 15%;
+  text-align: left;
+}
+.climateTitle {
+  margin-top: 1%;
+  margin-bottom: 4%;
+}
+.columnDoen {
+  max-width: 70%;
+  margin-left: 15%;
+}
+.columnDoenTitle {
+  max-width: 90%;
+  margin-left: 5%;
+}
+.mainBlock {
+  max-width: 70%;
+  margin-left: 15%;
+}
+.leuvenCSS {
+  min-height: 400px;
+}
+.kuleuvenCSS {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.overOnsText {
+  max-width: 70%;
+  margin-left: 15%;
+}
+.columnOverOns {
+  max-width: 70%;
+  margin-left: 15%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.partners {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.thema-overzicht {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.thema-item {
+  width: 25%;
+  margin: 2.5%;
+}
+
+.thema-image:hover {
+  opacity: 0.8;
+}
+
+.thema-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.thema-image {
+  text-decoration: none;
+}
+
+.thema-title {
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: var(--main-1-color);
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  background: var(--main-2-color);
+  border-radius: 12px;
+  color: white;
+  width: 15%;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.dashboard-link {
+  text-decoration: none;
+  color: white;
+  background: var(--main-2-color);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 18px;
+  padding: 0.25rem;
+  display: block;
+}
+
+.dashboard-link:hover {
+  background: var(--main-1-color);
+  color: black;
+}
+
+.page-text {
+  margin-left: 5%;
+  color: black;
+  text-decoration: none;
+}
+.watWeDoen {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.watwedoenflex {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.euMissies {
+  margin-left: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  .euMissies {
+    margin-left: 0;
   }
-  .menu-item-has-children:hover .sub-menu {
-    display: block;
-  }
-
-.subthema{
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
+.quote {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  min-height: 22rem;
+}
+.quoteText {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+}
+.partnerKlein {
+  margin-left: 20%;
+}
+.partnersSpacing {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.partnerGroot {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 3%;
+}
+.partnersTitle {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.contact {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
 
+.missies {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.missiesTitle {
+  padding-top: 3%;
+}
+.partnerKlein img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.privacyPolicy {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 3%;
+}
+.privacyPolicy h2 {
+  color: #19706d;
+}
+
+.thema_user p {
+  font-size: small;
+}
+
+.thema_user a {
+  color: white;
+}
+
+.theme_title_overview h2 a {
+  color: white;
+  text-decoration: none;
+}

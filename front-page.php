@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="page-wrap">
-    <div>
+    <div class="">
         <?php get_template_part('includes/section', "content"); ?>
     </div>
 
